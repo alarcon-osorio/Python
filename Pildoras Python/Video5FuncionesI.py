@@ -7,4 +7,5 @@ def mensaje():
 
 #Llamado de función 
 mensaje()
+print("Llamado 2")
 mensaje()
