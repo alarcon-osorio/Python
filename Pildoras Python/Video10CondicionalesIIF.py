@@ -8,7 +8,7 @@ def evaluacion(nota):
     valoracion="Aprobado"
     if nota<5:
         valoracion = "Reprobado"
-        calificacion = 7 #Solo accesible desde el IF - Aclaración
+        #calificacion = 7 #Solo accesible desde el IF - Aclaración
     return valoracion
 
 print(evaluacion(int(nota_alumno)))
