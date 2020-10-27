@@ -8,21 +8,22 @@ def multiplica(num1, num2):
 	return num1*num2
 
 def divide(num1,num2):	
-
+#Excepcion controlada cuando se divide entre 0
     try:
         return num1/num2
     except ZeroDivisionError:
-        print("No se puede dividir entre 0")
-    
-    if divide == "None":
-        print("Hola")
-    
-	
+        print("No se puede dividir entre 0")  
 
-op1=(int(input("Introduce el primer numero: ")))
+#Excepcion de valores que no son numeros
+while True:
+    try:
+        op1=(int(input("Introduce el primer numero: ")))
+        op2=(int(input("Introduce el segundo numero: ")))
+        break
+    
+    except ValueError:
+        print("Los Valores introducidos no so correctos, intenta de nuevo")
 
-op2=(int(input("Introduce el segundo numero: ")))		
-	
 operacion=input("Introduce la operacion a realizar (suma,resta,multiplica,divide): ")
 
 if operacion=="suma":
