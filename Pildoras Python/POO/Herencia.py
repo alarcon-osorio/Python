@@ -41,8 +41,12 @@ class Moto(Vehiculos): #Video 29 Hreencia
         print("Marca:", self.marca, "\nModelo:",self.modelo ,"\nEn Marcha", self.enMarcha,
         "\nAcelerando",self.acelera,"\nFranando",self.frena, "\n",self.hstunt)
 
-class Electricos():
-    def __init__(self):
+class Electricos():    
+    def __init__(self, marca, modelo): #Video 31 --> marca, modelo
+
+        #Video 31
+        super().__init__(marca, modelo)
+
         self.autonomia=100
         
     def cargarEnergia(self):
@@ -61,5 +65,5 @@ print("----Electricos-----")
 class BicicletaElecrtica(Electricos, Vehiculos): #Herencia multiple
     pass
 print("----Bicicleta Elecrtica-----")
-miBici = BicicletaElecrtica() #Hereda siempre el primer constructor por preferencia indicado en la clase de la herencia multiple
-
+miBici = BicicletaElecrtica("Obera", "kenya") #Hereda siempre el primer constructor por preferencia indicado en la clase de la herencia multiple
+miBici.estado()
