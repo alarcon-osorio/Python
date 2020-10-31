@@ -25,4 +25,23 @@ agregar_texto=open("Archivos/archivo.txt","a")
 agregar_texto.write("\nSegunda Linea")
 agregar_texto.close()
 
+#Video 38 - Archivos Externos II
+#Agregar linea de texto
+texto=open("Archivos/archivo.txt","r")
+print(texto.read())
+#Desplaza puntero
+texto.seek(5)
+print(texto.read())
 
+#Leer y escribir 
+texto=open("Archivos/archivo.txt","r+")
+texto.write("comiezo")
+print(texto.read())
+
+#Modificar lineas
+archivo_texto=open("Archivos/archivo.txt","r+")
+lista_texto=archivo_texto.readlines()
+lista_texto[1]="Linea exterior \n ojojoj"
+archivo_texto.seek(0)
+archivo_texto.writelines(lista_texto)
+archivo_texto.close()
