@@ -1,0 +1,10 @@
+README.md
+setup.py
+Calculos/CalculosGenerales.py
+Calculos/__init__.py
+Calculos/Basicos/OperacionesBasicas.py
+Calculos/Basicos/__init__.py
+Paquete_Calculos.egg-info/PKG-INFO
+Paquete_Calculos.egg-info/SOURCES.txt
+Paquete_Calculos.egg-info/dependency_links.txt
+Paquete_Calculos.egg-info/top_level.txt
