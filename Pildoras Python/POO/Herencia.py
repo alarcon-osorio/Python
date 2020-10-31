@@ -51,7 +51,7 @@ class Electricos():
         
     def cargarEnergia(self):
         self.cargando = True
-
+print("----Moto-----")
 miMoto = Moto("Honda", "CB190")
 miMoto.stunt()
 miMoto.estado()
